@@ -147,7 +147,7 @@ def ints_from_data_columns(tsv_datafile : pathlib.Path) -> tuple:
     Example
     -------
 
-    Get the three columns of the Chromation incandescent spectrum:
+    Get the two columns of the map file:
 
     >>> pix, wav = ints_from_data_columns(pathlib.Path('1002-19_map.txt'))
 
