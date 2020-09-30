@@ -178,10 +178,7 @@ def ints_from_data_columns(tsv_datafile : pathlib.Path) -> tuple:
     data = strings_from_data_columns(tsv_datafile)
 
     # Convert every string to an int
-    return tuple(
-        [int(string) for string in data[col]]
-        for col in range(len(data))
-        )
+    return tuple( [int(string) for string in col] for col in data )
 
 if __name__ == '__main__':
     # Read the map file
